@@ -18,15 +18,21 @@ export default function Gallery() {
   }, []);
   return (
     <div className='gallery_container'>
-    <Navbar/>
-      <div className="image-grid">
-      {imagePaths.map((path, index) => (
-        <div className="image-item" key={index}>
-          <img src={path} alt={`Image ${index + 1}`} />
-        </div>
-      ))}
+      <Navbar />
+
+      <div>
+        {/* <p className='title'>PROJECT GALLERY</p> */}
+        <p className='header'>QUALITY CRAFTSMANSHIP FOR A WIDE RANGE OF APPLICATIONS & INDUSTRIES</p>
+        <p className='paragraph'>All our projects are covered by a full non-disclosure agreement—keeping your ideas safe—and backed by a 100% performance guarantee, ensuring that the finished product will perform as designed. Here are just a few examples of our craftsmanship.</p>
       </div>
-      <Footer/>
+      <div className="grid-container">
+        {imagePaths.map((image, index) => (
+          <div className="image-item" key={index}>
+            <img src={image} alt={`Image ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+      <Footer />
     </div>
   )
 }

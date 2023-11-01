@@ -4,29 +4,64 @@
     flex-direction: column;
 
 
-    .image-grid {
+    .title{
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .header{
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        color: #002147;
+    }
+
+    .paragraph{
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 200px 50px 200px;
+
+        @media (max-width: 767px) {
+            
+            margin: 20px 30px 50px 30px;
+      
+        }
+    }
+
+    .grid-container {
         display: grid;
-        width: 100%;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        /* 3-column grid */
-        grid-gap: 30px;
-        justify-items: center; /* Horizontal alignment */
-        align-items: center; /* Vertical alignment */
-        /* Gap between images */
+        grid-template-columns: repeat(3, 0.25fr);
+        /* Three columns */
+        gap: 15px;
+        /* Adjust the gap between images as needed */
+        justify-content: center;
+        margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            
+              grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+        
+          }
+          
+        /* Center align horizontally */
     }
 
     .image-item {
-        display: flex;
-        align-items: center; /* Vertically center items */
-      }
-      
-      .image-item img {
-        max-width: 100%; /* Maximum width of image */
-        height: auto; /* Maintain aspect ratio */
-      }
-      
+        text-align: center;
+        /* Center align the images */
+    }
+
+    img {
+        max-width: 100%;
+        /* Ensure images don't exceed their container */
+        height: auto;
+    }
+
     //   These CSS adjustments, particularly setting align-items: center on the .image-item, aims to center the content both horizontally and vertically within the grid. Adjustments to the alignment of the image-item containers should assist in centering the images within the grid cells.
-      
+
 
 
 }
