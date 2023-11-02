@@ -40,19 +40,19 @@ export default function Navbar() {
                     </div>
                     {showMenu ? (
                         <div className="mobileMenu">
-                            <a href="#">ABOUT</a>
-                            <a href="#">CAPABILITIES</a>
-                            <a href="#">PROJECT GALLERY</a>
-                            <a href="#">CAREER</a>
-                            <a href="#">CONTACT</a>
+                            <a href="/about">ABOUT</a>
+                            <a href="/capabilities">CAPABILITIES</a>
+                            <a href="/gallery">PROJECT GALLERY</a>
+                            <a href="/careers">CAREER</a>
+                            <a href="/contact">CONTACT</a>
                         </div>
                     ) : (
                         <div className="desktopMenu">
-                            <a href="#">ABOUT</a>
-                            <a href="#">CAPABILITIES</a>
-                            <a href="#">PROJECT GALLERY</a>
-                            <a href="#">CAREER</a>
-                            <a href="#">CONTACT</a>
+                            <a href="/about">ABOUT</a>
+                            <a href="/capabilities">CAPABILITIES</a>
+                            <a href="/gallery">PROJECT GALLERY</a>
+                            <a href="/careers">CAREER</a>
+                            <a href="/contact">CONTACT</a>
                         </div>
                     )}
 

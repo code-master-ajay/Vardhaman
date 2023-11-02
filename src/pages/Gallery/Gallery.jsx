@@ -22,7 +22,7 @@ export default function Gallery() {
 
       <div>
         {/* <p className='title'>PROJECT GALLERY</p> */}
-        <p className='header'>QUALITY CRAFTSMANSHIP FOR A WIDE RANGE OF APPLICATIONS & INDUSTRIES</p>
+        <p className='header'>QUALITY CRAFTSMANSHIP FOR A WIDE RANGE OF <br></br>APPLICATIONS & INDUSTRIES</p>
         <p className='paragraph'>All our projects are covered by a full non-disclosure agreement—keeping your ideas safe—and backed by a 100% performance guarantee, ensuring that the finished product will perform as designed. Here are just a few examples of our craftsmanship.</p>
       </div>
       <div className="grid-container">

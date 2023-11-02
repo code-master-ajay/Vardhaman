@@ -2,11 +2,24 @@ import '../Footer/footer.scss'
 import { IoLocationOutline } from 'react-icons/io5'
 import { FiPhoneCall } from 'react-icons/fi'
 import { HiOutlineMail } from 'react-icons/hi'
-
+import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
+import { useMemo } from "react";
+import { BsArrowRight } from 'react-icons/bs'
 
 export default function Footer() {
+
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: 'AIzaSyDIbgOCsLxqNbLgp3yV485wCbWraGLexFQ',
+  });
+  const center = useMemo(() => ({ lat: 23.251391270833157, lng: 72.63238172385545 }), []);
+   
+
   return (
     <div className='footer_container'>
+      <div className='top_button'>
+        CONTACT
+        <BsArrowRight></BsArrowRight>
+      </div>
       <div className="footer_top">
       <div className='left'>
 
@@ -29,7 +42,7 @@ export default function Footer() {
             <FiPhoneCall/>
           </div>
           <div>
-            <p>PHONE: +91-79-23287581/29750245</p>
+            <p>PHONE: +91-79-23287581 / 29750245</p>
             <p>MOBILE: +91 95103 23328</p>
           </div>
         </div>
@@ -47,6 +60,22 @@ export default function Footer() {
 
       <div className='right'>
 
+        <h3 className='location_text'>OUR LOCATION</h3>
+        {!isLoaded ? (
+        <h1>Loading...</h1>
+      ) : (
+        <GoogleMap
+          mapContainerClassName="map-container"
+          center={center}
+          zoom={15}
+        >
+          <MarkerF 
+          position={center}
+          icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
+          ></MarkerF>
+        </GoogleMap>
+      )}
+
       </div>
       </div>
       <div className="footer_bottom">
@@ -56,3 +85,5 @@ export default function Footer() {
     </div>
   )
 }
+
+

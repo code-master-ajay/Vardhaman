@@ -9,9 +9,7 @@ export default function Home() {
     <div className='container'>
       <Navbar/>
       <div>
-        ;knasdl j
-        la sd;
-        as d
+        HOME
       </div>
       <Footer/>
     </div>
