@@ -1,0 +1,91 @@
+.gallery_container {
+
+    display: flex;
+    flex-direction: column;
+
+
+    .title {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .header {
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+        color: #002147;
+    }
+
+    .paragraph {
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        margin: 50px 300px 80px 300px;
+
+        @media (max-width: 767px) {
+
+            margin: 20px 30px 50px 30px;
+
+        }
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 0.25fr);
+        /* Three columns */
+        gap: 15px;
+        /* Adjust the gap between images as needed */
+        justify-content: center;
+        margin-bottom: 150px;
+
+        @media (max-width: 767px) {
+
+            grid-template-columns: repeat(2, 1fr);
+            /* Two columns for smaller screens */
+
+        }
+
+
+        .grid-image {
+            // width: 200px;
+            // /* Adjust the image size as needed */
+            // height: 200px;
+            transition: transform 0.3s;
+        }
+
+        /* Center align horizontally */
+    }
+
+    .image-item {
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Center align the images */
+    }
+
+    img {
+        max-width: 100%;
+        /* Ensure images don't exceed their container */
+        height: auto;
+    }
+
+    .image-item:hover {
+        transform: scale(1.1); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);/* Change the scale factor for desired zoom effect */
+        z-index: 1;
+      }
+      
+      .image-item:hover .grid-image {
+        transform: scale(1.1); /* Change the scale factor for desired zoom effect */
+      }
+
+    //   These CSS adjustments, particularly setting align-items: center on the .image-item, aims to center the content both horizontally and vertically within the grid. Adjustments to the alignment of the image-item containers should assist in centering the images within the grid cells.
+
+
+
+}

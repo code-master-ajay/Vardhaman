@@ -1,0 +1,161 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        height: 90px;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+            height: 100%;
+            flex: 3;
+        }
+
+        .middle {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 6;
+
+            .logo {
+                max-width: 100%;
+                /* Make the image responsive initially */
+                // border: 2px solid #333; /* Example border styling */
+                // border-radius: 5px; /* Example border radius */
+                padding: 20px;
+                /* Adding padding around the image */
+                /* Set a fixed width for larger screens */
+                width: 300px;
+                /* Adjust the fixed width as needed */
+
+                @media screen and (max-width: 768px) {
+                    /* When the screen width is 768px or smaller (typical mobile resolution), make the image responsive */
+                    width: 50%;
+                    height: 200px;
+                    /* Allow the image to take up the full width of the container */
+                }
+            }
+
+        }
+
+        .right {
+            height: 100%;
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .phone {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 15px;
+                margin-right: 10px;
+                color: #0174BE;
+
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 15px;
+                color: #0174BE;
+
+                margin-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            /* When the screen width is 768px or smaller (typical mobile resolution), make the image responsive */
+            flex-direction: column;
+            /* Allow the image to take up the full width of the container */
+        }
+
+
+    }
+
+    .bottom {
+        margin-top: 5px;
+        display: flex;
+        background-color: #0174BE;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            /* Add more styling as needed */
+        }
+
+        .desktopMenu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            /* Desktop menu styles (horizontal) */
+        }
+
+        .mobileMenu {
+            display: none;
+            /* Initially hidden on desktop */
+            /* Mobile menu styles (vertical) */
+        }
+
+        .hamburger {
+            display: none;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            color: white; 
+            /* Hamburger icon styles */
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            color: white; /* Example color */
+            text-decoration: none; /* Example text decoration */
+            
+          }
+
+        @media (max-width: 768px) {
+
+            margin-top: 20px;
+
+
+            .desktopMenu {
+                display: none;
+                /* Hide on mobile */
+            }
+
+            .mobileMenu {
+                display: flex;
+                flex-direction: column;
+                transition: all 1s ease;
+
+                /* Show on mobile */
+            }
+
+            .hamburger {
+                display: block;
+                /* Show on mobile */
+            }
+        }
+
+        // @media screen and (max-width: 768px) {
+        //     /* When the screen width is 768px or smaller (typical mobile resolution), make the image responsive */
+        //     margin-top: 10px;
+        //     flex-direction: column;
+        //     /* Allow the image to take up the full width of the container */
+        // }
+    }
+}
