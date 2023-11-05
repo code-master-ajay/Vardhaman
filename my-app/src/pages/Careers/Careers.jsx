@@ -36,6 +36,7 @@ export default function Careers() {
       </div>
       <div className="career_bottom">
         <h3>CAREER OPPORTUNITIES AT VARDHAMAN ELECRTOMECH : </h3>
+        <p>Explore exciting career opportunities with us and be a part of a company that values creativity, craftsmanship, and growth.<br></br> Join us in shaping the future of fabrication. </p>
       </div>
       <div className="table-container">
         {jobOpenings.length > 0 ? 

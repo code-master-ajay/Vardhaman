@@ -1,0 +1,54 @@
+.about_container{
+
+
+    .header {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+        color: #002147;
+    }
+
+    .para {
+        font-weight: normal;
+        font-size: 18px;
+        // text-align: center;
+        margin: 50px 300px 20px 300px;
+
+        @media (max-width: 767px) {
+            margin: 20px 30px 50px 30px;
+        }
+    }
+
+
+
+    .legend_div{
+
+        width: 100%;
+        // background-color: red;
+        margin-left: 300px;
+        margin-bottom: 200px;
+
+
+        .legend{
+            font-weight: 500;
+            font-size: 24px;
+            margin-top: 50px;
+            color: #002147;
+        }
+
+        .legend_title{
+
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .legend_text{
+
+            font-weight: 400;
+            font-size: 18px;
+            // margin-top: 10px;
+        }
+    }
+}

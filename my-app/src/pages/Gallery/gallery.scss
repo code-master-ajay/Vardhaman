@@ -68,10 +68,11 @@
         /* Center align the images */
     }
 
-    img {
+    .grid-image {
         max-width: 100%;
         /* Ensure images don't exceed their container */
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
 
     .image-item:hover {
