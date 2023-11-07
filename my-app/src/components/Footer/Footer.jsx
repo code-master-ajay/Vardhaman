@@ -70,7 +70,7 @@ export default function Footer() {
           zoom={15}
         >
           <MarkerF 
-          position={center}
+          position={center} 
           icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
           ></MarkerF>
         </GoogleMap>

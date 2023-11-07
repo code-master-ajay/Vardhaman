@@ -104,7 +104,9 @@
             .contact:hover {
                 background-color: white;
                 color: black; /* For text color change */
-                cursor: pointer; /* Change cursor on hover */
+                cursor: pointer;
+                border: 0.1px solid #002147;/* Change cursor on hover */
+        /* Change cursor on hover */
               }
         }
     }

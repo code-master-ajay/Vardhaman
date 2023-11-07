@@ -1,5 +1,152 @@
-.container{
-
+.home_container {
     display: flex;
     flex-direction: column;
+
+    .image_div {
+        width: 100%;
+        height: 400px;
+
+        .image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .header {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+        color: #002147;
+    }
+
+    .para {
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        margin: 50px 300px 20px 300px;
+
+        @media (max-width: 767px) {
+            margin: 20px 30px 50px 30px;
+        }
+    }
+
+    .learn_more {
+        width: 100px;
+        background-color: #002d62;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        align-self: center;
+        margin-bottom: 50px;
+        border: 0.1px solid #002147; /* Change cursor on hover */
+    }
+
+    .learn_more:hover {
+        background-color: white;
+        color: black; /* For text color change */
+        cursor: pointer;
+        border: 0.1px solid #002147; /* Change cursor on hover */
+    }
+
+    .capabilities_box {
+        background-color: #002147;
+        width: 75%;
+        align-self: center;
+        height: 500px;
+        display: flex;
+        margin-bottom: 50px;
+
+        .image_part {
+            flex: 1;
+
+            .capa_image {
+                width: 100%;
+                object-fit: fill;
+                height: 100%;
+            }
+        }
+
+        .text_part {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            color: aliceblue;
+
+            .capa_title {
+                font-weight: 500;
+                font-size: 25px;
+                // text-align: center;
+                margin-left: 30px;
+                margin-top: 20px;
+                color: white;
+            }
+
+            .capa_details {
+                font-weight: 400;
+                font-size: 18px;
+                // text-align: center;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 20px;
+                color: white;
+            }
+
+            .contact {
+                width: 150px;
+                margin-left: 30px;
+                margin-top: 30px;
+                text-align: center;
+                background-color: #002147;
+                color: white;
+                padding: 5px;
+                display: flex;
+                font-weight: 400;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-size: 18px;
+                border: 0.1px solid white; /* Change cursor on hover */
+                transition:
+                    background-color 0.5s,
+                    color 0.5s;
+            }
+
+            .contact:hover {
+                background-color: white;
+                color: black; /* For text color change */
+                cursor: pointer;
+                border: 0.1px solid #002147; /* Change cursor on hover */
+                /* Change cursor on hover */
+            }
+        }
+    }
+
+    .clients_box {
+        // display: flex;
+        margin-bottom: 50px;
+
+        .logo_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px auto;
+            max-width: 98%;
+            padding-left: 10px;
+            padding-right: 10px;
+            // background-color: #002147;
+            border: 0.1px solid #002147;
+            gap: 40px;
+
+            img {
+                // flex:1;
+                max-width: 200px;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
 }

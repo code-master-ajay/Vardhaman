@@ -20,16 +20,16 @@ export default function Navbar() {
                 <div className='left'>
                 </div>
                 <div className='middle'>
-                    <img src={Logo} alt='Image' className='logo'></img>
+                    <img src={Logo} alt='Image' className='logo' onClick={event =>  window.location.href='/'}></img>
                 </div>
                 <div className='right'>
                     <div className="phone">
                         <FiPhoneCall className='phone_icon' />
-                        <p>+91 8401453256</p>
+                        <p>+91 95103 23328</p>
                     </div>
                     <div className="email">
                         <HiOutlineMail className='email_icon' />
-                        <p>abc@email.com</p>
+                        <p>sjvarhman@yahoo.com</p>
                     </div>
                 </div>
             </div>
