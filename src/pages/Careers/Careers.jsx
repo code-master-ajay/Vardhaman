@@ -5,6 +5,8 @@ import Footer from '../../components/Footer/Footer'
 import career_image from '../../../images/career_image.jpg'
 
 export default function Careers() {
+
+  
   return (
     <div className='career_container'>
       <Navbar/>
